@@ -150,6 +150,12 @@ $(document).ready(() => {
         }
     });
 
+    $(window).on('resize', function () {
+        if ($(window).width() < 1022 && $(window).width > 767) {
+            $('.header-footer-item').css('display', 'block');
+        }
+    });
+
     $('#menu-icon').click(() => {
         $('.header-items').fadeIn().css('display', 'flex');
     })
