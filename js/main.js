@@ -220,4 +220,18 @@ $(document).ready(() => {
         ]
     });
 
+//    Карусель для главной карусели
+
+    let mainCarousel = $('#main-carousel');
+    mainCarousel.slick({
+        dots: false,
+        arrows: true,
+        infinite: true
+    });
+
+    $($('.slick-next')[0]).click(() => {
+        mainCarousel.slick('refresh');
+    });
+
+    new WOW().init();
 });

@@ -1,7 +1,4 @@
 @media screen and (min-width: 2559px) {
-  #main {
-    background-size: 100% 100%;
-  }
 
   #request {
     background-size: 100% 100%;
@@ -19,9 +16,6 @@
 }
 
 @media screen and (max-width: 2558px) {
-  #main {
-    background-size: 100% 100%;
-  }
 
   #request {
     background-size: 100% 100%;
@@ -49,11 +43,6 @@
 }
 
 @media screen and (max-width: 1900px) {
-
-  #main {
-    background-position-x: left;
-    background-size: 120% 100%;
-  }
 
   #request {
     background-size: 125% 100%;
@@ -192,10 +181,6 @@
 
 @media screen and (max-width: 1300px) {
 
-  #main {
-    background-size: 153% 100%;
-  }
-
   #request {
     background-size: 150% 100%;
   }
@@ -229,6 +214,10 @@
   #main {
     #main-container {
       max-width: 1180px;
+
+      #main-block {
+        height: 635px;
+      }
     }
   }
 
@@ -236,12 +225,13 @@
     #about-container {
       max-width: 1180px;
       margin: 150px auto 0;
-        #about-image {
-          position: relative;
-          left: -30px;
-          z-index: -1;
-          flex-shrink: 0;
-        }
+
+      #about-image {
+        position: relative;
+        left: -30px;
+        z-index: -1;
+        flex-shrink: 0;
+      }
     }
   }
 
@@ -686,10 +676,27 @@
   }
 
   #main {
-    background-size: 200% 100%;
+
+    #main-carousel {
+      .main-carousel-photo {
+        width: 70%;
+
+        img {
+          width: 150%;
+        }
+      }
+
+      .slick-slide {
+        width: 770px !important;
+      }
+    }
 
     #main-container {
       max-width: 760px;
+
+      #main-block {
+        height: 710px;
+      }
     }
   }
 
@@ -1118,17 +1125,48 @@
   }
 
   #main {
-    background-size: 400% 100%;
-    background-position-x: 50%;
+    #main-carousel {
+      height: 630px;
+
+      .main-carousel-photo {
+        width: 25% !important;
+
+        img {
+          width: 600%;
+          height: 630px;
+        }
+      }
+
+      .slick-next {
+        &::before {
+          content: url("../../icons/rightArrowB.svg");
+        }
+      }
+
+      .slick-slide {
+        width: 376px !important;
+      }
+    }
 
     #main-container {
       max-width: 365px;
 
-      #main-description {
-        width: 100%;
-        font-size: 34px;
-        padding-top: 60px;
-        line-height: 47.7px;
+      #main-carousel-background {
+        width: 350px;
+        height: 400px;
+        top: 53px;
+        left: 8px;
+      }
+
+      #main-block {
+        height: 610px;
+
+        #main-description {
+          width: 100%;
+          font-size: 34px;
+          padding-top: 70px;
+          line-height: 47.7px;
+        }
       }
     }
   }
@@ -1137,6 +1175,7 @@
     #about-container {
       max-width: 760px;
       margin: 75px auto 0;
+
       #about-image {
         width: 400px;
         height: 379px;
@@ -1185,7 +1224,7 @@
   #materials {
     #materials-container {
       max-width: 365px;
-      margin: 50px auto 120px auto;
+      margin: 50px auto 150px auto;
 
       #materials-edit-block {
         #edit-carousel {
@@ -1327,7 +1366,7 @@
   #how-works {
     #how-works-container {
       max-width: 365px;
-      margin: 75px auto 0;
+      margin: 120px auto 0;
 
       #how-works-description {
         width: 100%;
@@ -1621,10 +1660,37 @@
 @media screen and (max-width: 374px) {
 
   #main {
+
+    #main-carousel {
+      height: 600px;
+
+      .main-carousel-photo {
+        width: 30% !important;
+
+        img {
+          height: 600px;
+          width: 800%;
+        }
+      }
+
+      .slick-slide {
+        width: 320px !important;
+      }
+    }
+
     #main-container {
-      #main-description {
-        font-size: 30px;
-        line-height: 39.7px;
+      #main-carousel-background {
+        width: 305px;
+        height: 400px;
+        top: 50px;
+        left: 8px;
+      }
+
+      #main-block {
+        #main-description {
+          font-size: 30px;
+          line-height: 39.7px;
+        }
       }
     }
   }

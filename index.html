@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="dest/css/slick.css">
     <link rel="stylesheet" href="dest/css/slick-theme.css">
+    <link rel="stylesheet" href="dest/css/animate.css">
     <link rel="stylesheet" href="dest/css/main.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -81,23 +82,43 @@
 </div>
 
 <div id="main">
-    <div id="main-container">
-        <div id="main-description">
-            Гардеробные комнаты на заказ по цене на <span>30%</span> ниже европейских производителей
+    <div id="main-carousel">
+        <div class="main-carousel-photo">
+            <img src="images/main-images/mainCarousel1B1.jpg" alt="">
         </div>
-        <div id="main-second-description">
-            Изготовление гардеробных комнат
-            по индивидуальному проекту
+        <div class="main-carousel-photo">
+            <img src="images/main-images/mainCarousel2B1.jpg" alt="">
         </div>
-        <div class="burgundy-btn open-pop-up">
-            Оставить заявку
+        <div class="main-carousel-photo">
+            <img src="images/main-images/mainCarousel3B1.jpg" alt="">
+        </div>
+        <div class="main-carousel-photo">
+            <img src="images/main-images/mainCarousel4B1.jpg" alt="">
+        </div>
+        <div class="main-carousel-photo">
+            <img src="images/main-images/mainCarousel5B1.jpg" alt="">
+        </div>
+    </div>
+    <div id="main-container" class="wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s">
+        <div id="main-carousel-background"></div>
+        <div id="main-block">
+            <div id="main-description">
+                Гардеробные комнаты на заказ по цене на <span>30%</span> ниже европейских производителей
+            </div>
+            <div id="main-second-description">
+                Изготовление гардеробных комнат
+                по индивидуальному проекту
+            </div>
+            <div class="burgundy-btn open-pop-up">
+                Оставить заявку
+            </div>
         </div>
     </div>
 </div>
 
 <div id="about">
     <div id="about-container">
-        <div id="about-description-container">
+        <div id="about-description-container" class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s">
             <div id="about-title">
                 О компании
             </div>
@@ -130,7 +151,7 @@
 <div id="advantage">
     <div id="advantage-container">
         <div id="advantage-items">
-            <div class="advantage-item">
+            <div class="advantage-item wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
                 <div class="advantage-item-title">
                     25 лет
                     на рынке
@@ -141,7 +162,7 @@
                     В том числе объекты федерального значения
                 </div>
             </div>
-            <div class="advantage-item">
+            <div class="advantage-item wow animate__animated animate__fadeInLeftBig" data-wow-duration="1.5s">
                 <div class="advantage-item-title">
                     Расширенная
                     гарантия
@@ -153,7 +174,7 @@
                     вместо 1 года
                 </div>
             </div>
-            <div class="advantage-item">
+            <div class="advantage-item wow animate__animated animate__fadeInRightBig" data-wow-duration="1.5s" >
                 <div class="advantage-item-title">
                     Индивидуальный
                     подход
@@ -163,7 +184,7 @@
                     и на основе этого предложат лучшее решение для поставленной задачи
                 </div>
             </div>
-            <div class="advantage-item">
+            <div class="advantage-item wow animate__animated animate__fadeInRightBig" data-wow-duration="1.5s" data-wow-delay="0.5s" >
                 <div class="advantage-item-title">
                     Собственное
                     производство
@@ -181,9 +202,9 @@
 
 <div id="gift">
     <div id="gift-container">
-        <div id="gift-image">
+        <div id="gift-image" class="wow animate__animated animate__fadeInUpBig" data-wow-duration="1.5s">
         </div>
-        <div id="gift-info-block">
+        <div id="gift-info-block" class="wow animate__animated animate__fadeInDownBig" data-wow-duration="1.5s">
             <div id="gift-info-block-title">
                 При оформлении заказа, получите разработку конструкторской документации в подарок
             </div>
@@ -210,17 +231,15 @@
                         <div class="list-title">
                             Наши поставщики:
                         </div>
-                        <ul>
-                            <div class="list-shell">
-                                <li>Листовые материалы: Egger, Kastamonu, Tss cleaf</li>
-                            </div>
-                            <div class="list-shell">
-                                <li>Шпон и массив: Wood stock, King wood</li>
-                            </div>
-                            <div class="list-shell">
-                                <li>Металлические фасады: MIXAL S.P.L</li>
-                            </div>
-                        </ul>
+                        <div class="list-shell">
+                            <div>Листовые материалы: Egger, Kastamonu, Tss cleaf</div>
+                        </div>
+                        <div class="list-shell">
+                            <div>Шпон и массив: Wood stock, King wood</div>
+                        </div>
+                        <div class="list-shell">
+                            <div>Металлические фасады: MIXAL S.P.L</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,19 +284,17 @@
                     Отделка:
                 </div>
                 <div class="material-list">
-                    <ul>
-                        <div class="list-shell">
-                            <li>В своих проектах мы используем натуральный шпон или итальянский дизайн-шпон TABU</li>
+                    <div class="list-shell">
+                        <div>В своих проектах мы используем натуральный шпон или итальянский дизайн-шпон TABU</div>
+                    </div>
+                    <div class="list-shell">
+                        <div>Отделка поверхностей фасадов мебельными лаками SAYERIACK и RENNER</div>
+                    </div>
+                    <div class="list-shell">
+                        <div>
+                            Отделка внутренних поверхностей кожа, текстиль Alcantara S.p.A
                         </div>
-                        <div class="list-shell">
-                            <li>Отделка поверхностей фасадов мебельными лаками SAYERIACK и RENNER</li>
-                        </div>
-                        <div class="list-shell">
-                            <li>
-                                Отделка внутренних поверхностей кожа, текстиль Alcantara S.p.A
-                            </li>
-                        </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,11 +305,15 @@
                     производителей:
                 </div>
                 <div class="material-list">
-                    <ul>
-                        <li>BLUM</li>
-                        <li>HEFFEL</li>
-                        <li>Hettich</li>
-                    </ul>
+                    <div class="list-shell">
+                        <div>BLUM</div>
+                    </div>
+                    <div class="list-shell">
+                        <div>HEFFEL</div>
+                    </div>
+                    <div class="list-shell">
+                        <div>Hettich</div>
+                    </div>
                 </div>
             </div>
             <div id="fittings-carousel">
@@ -431,7 +452,8 @@
             Как мы работаем
         </div>
         <div id="how-works-description">
-            За 25 лет нашей работы мы выработали четкую схему взаимодействия. Благодаря этому, все наши клиенты остаются
+            За 25 лет нашей работы мы выработали четкую схему взаимодействия. Благодаря этому, все наши клиенты
+            остаются
             довольны
         </div>
         <div id="how-works-steps-block">
@@ -522,7 +544,8 @@
                 Оставьте заявку
             </div>
             <div id="request-info">
-                Остались вопросы и вы хотите получить консультацию? Заполните поля ниже и мы свяжемся с вами в рабочее
+                Остались вопросы и вы хотите получить консультацию? Заполните поля ниже и мы свяжемся с вами в
+                рабочее
                 время
             </div>
             <form action="" method="post">
@@ -815,7 +838,8 @@
                         Адрес:
                     </div>
                     <div class="contacts-block-info">
-                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M8 0C4.12273 0 0.96875 3.15398 0.96875 7.03125C0.96875 8.34101 1.33152 9.61934 2.01762 10.7283L7.59949 19.7228C7.83094 20.0966 8.37664 20.0909 8.60086 19.7148L14.0402 10.6333C14.6879 9.54781 15.0312 8.30211 15.0312 7.03125C15.0312 3.15398 11.8773 0 8 0ZM8 10.5547C6.0334 10.5547 4.47656 8.95394 4.47656 7.03125C4.47656 5.09262 6.06137 3.50781 8 3.50781C9.93863 3.50781 11.5234 5.09262 11.5234 7.03125C11.5234 8.93699 9.98754 10.5547 8 10.5547Z"
                                   fill="#640000"/>
                         </svg>
@@ -825,7 +849,8 @@
                 <div id="contacts-time-block">
                     <div class="contacts-block-title">Часы работы:</div>
                     <div class="contacts-block-info">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 0C4.48578 0 0 4.48578 0 10C0 15.5142 4.48578 20 10 20C15.5142 20 20 15.5142 20 10C20 4.48578 15.5142 0 10 0ZM14.7559 15.1724C14.5934 15.3349 14.38 15.4167 14.1667 15.4167C13.9534 15.4167 13.7399 15.3349 13.5776 15.1724L9.41086 11.0059C9.25415 10.8501 9.16672 10.6383 9.16672 10.4167V5C9.16672 4.53918 9.53995 4.16672 10 4.16672C10.4601 4.16672 10.8333 4.53918 10.8333 5V10.0717L14.7559 13.9941C15.0816 14.3201 15.0816 14.8466 14.7559 15.1724Z"
                                   fill="#640000"/>
                         </svg>
@@ -837,7 +862,8 @@
                         Телефон:
                     </div>
                     <div class="contacts-block-info">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path d="M18.3952 13.1277C17.1707 13.1277 15.9684 12.9362 14.8291 12.5597C14.2708 12.3693 13.5845 12.544 13.2438 12.8939L10.995 14.5915C8.38703 13.1994 6.78057 11.5934 5.40745 9.00505L7.0551 6.81484C7.48318 6.38734 7.63672 5.76286 7.45276 5.17693C7.07464 4.03161 6.88255 2.8299 6.88255 1.6049C6.8826 0.719948 6.16266 0 5.27776 0H1.60484C0.719948 0 0 0.719948 0 1.60484C0 11.7481 8.25198 20 18.3952 20C19.2801 20 20.0001 19.2801 20.0001 18.3952V14.7325C20 13.8477 19.2801 13.1277 18.3952 13.1277Z"
                                       fill="#640000"/>
@@ -856,7 +882,8 @@
                         Электронная почта:
                     </div>
                     <div class="contacts-block-info">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.57895 3.52637H18.4211C19.1791 3.52842 19.8296 4.06646 19.9737 4.8105L10 10.3685L0.0263158 4.8105C0.170436 4.06646 0.820929 3.52842 1.57895 3.52637ZM18.4211 16.5054H1.57895C0.708059 16.5027 0.00246711 15.7973 0 14.9265V6.00005L9.74219 11.4316C9.82113 11.475 9.90975 11.4986 10 11.5001C10.0907 11.5011 10.1797 11.4774 10.2578 11.4316L20 6.00005V14.9265C19.9994 15.7982 19.2928 16.5046 18.4211 16.5054Z"
                                   fill="#640000"/>
                         </svg>
@@ -1000,6 +1027,7 @@
     </div>
 </div>
 
+<script src="js/wow.min.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/main.js"></script>
