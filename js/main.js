@@ -131,16 +131,10 @@ $(document).ready(() => {
     // Открытие и закрытие меню в хедере и футере для разрешения смартфонов
 
     $(window).on('resize', function () {
-        if ($(window).width() < 1023) {
+        if ($(window).width() < 1024) {
             $('.header-items').click((e) => {
                 if (e.target.className === 'header-footer-item' || e.target.id === 'close-header-menu') {
                     $('.header-items').fadeOut();
-                }
-            });
-
-            $('#footer-items').click((e) => {
-                if (e.target.className === 'header-footer-item') {
-                    $('#footer-items').fadeOut();
                 }
             });
 
@@ -151,8 +145,12 @@ $(document).ready(() => {
     });
 
     $(window).on('resize', function () {
-        if ($(window).width() < 1022 && $(window).width > 767) {
-            $('.header-footer-item').css('display', 'block');
+        if ($(window).width() < 769) {
+            $('#footer-items').click((e) => {
+                if (e.target.className === 'header-footer-item') {
+                    $('#footer-items').fadeOut();
+                }
+            });
         }
     });
 
